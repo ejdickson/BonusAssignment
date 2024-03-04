@@ -8,12 +8,21 @@
 import UIKit
 
 class CalculationViewController: UIViewController {
+    
+    
+    var classification = ""
+    var bmi = ""
+    
+    @IBOutlet weak var classificationLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        classificationLabel.text = "Your BMI of \(bmi) is considered \(classification)"
 
         // Do any additional setup after loading the view.
     }
+
     
 
     /*
